@@ -1,11 +1,13 @@
+import 'package:bloc_example/app_router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(BlocExample(appRouter: AppRouter()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class BlocExample extends StatelessWidget {
+  const BlocExample({super.key, required this.appRouter});
+  final AppRouter appRouter;
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Bloc Example',
       theme: ThemeData(useMaterial3: true),
+      onGenerateRoute: appRouter.onGenerateRoute,
     );
   }
 }
