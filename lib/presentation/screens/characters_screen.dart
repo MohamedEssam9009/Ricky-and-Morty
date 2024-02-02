@@ -81,9 +81,9 @@ class _CharactersScreenState extends State<CharactersScreen> {
         shrinkWrap: true,
         physics: const ClampingScrollPhysics(),
         padding: EdgeInsets.zero,
+        itemCount: allCharacters.length,
         itemBuilder: (context, index) {
-          //TODO: implement characters item
-          return const CharacterItem();
+          return CharacterItem(character: allCharacters[index]);
         });
   }
 }
