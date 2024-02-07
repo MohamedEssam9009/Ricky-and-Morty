@@ -1,5 +1,5 @@
-import 'package:bloc_example/constants/my_colors.dart';
-import 'package:bloc_example/data/models/characters.dart';
+import '../../constants/my_colors.dart';
+import '../../data/models/characters.dart';
 import 'package:flutter/material.dart';
 
 class CharactersDetailsScreen extends StatelessWidget {
@@ -29,14 +29,6 @@ class CharactersDetailsScreen extends StatelessWidget {
                       characterInfo('Species : ', character.species),
                       buildDivider(310),
                       characterInfo('Gender : ', character.gender),
-                      buildDivider(280),
-                      characterInfo(
-                          'Episode : ',
-                          character.episode
-                              .map((element) => element
-                                  .substring(element.length - 1)
-                                  .splitMapJoin(' , '))
-                              .toString()),
                       buildDivider(280),
                       const SizedBox(height: 20)
                     ],
