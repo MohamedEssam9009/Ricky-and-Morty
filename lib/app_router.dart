@@ -1,8 +1,8 @@
-import 'package:bloc_example/business_logic/cubit/characters_cubit.dart';
-import 'package:bloc_example/constants/strings.dart';
-import 'package:bloc_example/data/repository/characters_repository.dart';
-import 'package:bloc_example/presentation/screens/characters_details_screen.dart';
-import 'package:bloc_example/presentation/screens/characters_screen.dart';
+import 'business_logic/cubit/characters_cubit.dart';
+import 'constants/strings.dart';
+import 'data/repository/characters_repository.dart';
+import 'presentation/screens/characters_details_screen.dart';
+import 'presentation/screens/characters_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

@@ -1,9 +1,10 @@
-import 'package:bloc_example/business_logic/cubit/characters_cubit.dart';
-import 'package:bloc_example/constants/my_colors.dart';
-import 'package:bloc_example/data/models/characters.dart';
-import 'package:bloc_example/presentation/widgets/character_item.dart';
+import '../../business_logic/cubit/characters_cubit.dart';
+import '../../constants/my_colors.dart';
+import '../../data/models/characters.dart';
+import '../widgets/character_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../business_logic/cubit/characters_state.dart';
 
@@ -102,11 +103,11 @@ class _CharactersScreenState extends State<CharactersScreen> {
     return TextField(
       controller: _searchTextController,
       cursorColor: MyColors.myGrey,
-      decoration: const InputDecoration(
+      decoration:  InputDecoration(
         hintText: 'Find a character ....',
         border: InputBorder.none,
         hintStyle: TextStyle(
-          fontSize: 18,
+          fontSize: 18.sp,
           color: MyColors.myGrey,
         ),
       ),

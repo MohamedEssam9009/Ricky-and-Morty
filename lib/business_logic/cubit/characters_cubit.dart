@@ -1,6 +1,6 @@
-import 'package:bloc_example/business_logic/cubit/characters_state.dart';
-import 'package:bloc_example/data/models/characters.dart';
-import 'package:bloc_example/data/repository/characters_repository.dart';
+import 'characters_state.dart';
+import '../../data/models/characters.dart';
+import '../../data/repository/characters_repository.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CharactersCubit extends Cubit<CharactersState> {

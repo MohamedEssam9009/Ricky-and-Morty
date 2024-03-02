@@ -1,4 +1,4 @@
-import 'package:bloc_example/data/models/characters.dart';
+import '../models/characters.dart';
 
 import '../web_services/characters_web_services.dart';
 

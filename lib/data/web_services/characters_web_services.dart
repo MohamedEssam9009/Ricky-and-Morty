@@ -1,4 +1,4 @@
-import 'package:bloc_example/constants/strings.dart';
+import '../../constants/strings.dart';
 import 'package:dio/dio.dart';
 
 class CharactersWebServices {
