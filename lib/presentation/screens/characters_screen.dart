@@ -117,11 +117,11 @@ class _CharactersScreenState extends State<CharactersScreen> {
     return TextField(
       controller: _searchTextController,
       cursorColor: MyColors.myGrey,
-      decoration: const InputDecoration(
+      decoration:  InputDecoration(
         hintText: 'Find a character ....',
         border: InputBorder.none,
         hintStyle: TextStyle(
-          fontSize: 18,
+          fontSize: 18.sp,
           color: MyColors.myGrey,
         ),
       ),

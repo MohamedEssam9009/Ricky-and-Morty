@@ -1,6 +1,7 @@
 import '../../constants/my_colors.dart';
 import '../../data/models/characters.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CharactersDetailsScreen extends StatelessWidget {
   final Character character;
@@ -25,18 +26,16 @@ class CharactersDetailsScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       characterInfo('Status : ', character.status),
-                      buildDivider(315),
+                      buildDivider(260.w),
                       characterInfo('Species : ', character.species),
-                      buildDivider(310),
+                      buildDivider(250.w),
                       characterInfo('Gender : ', character.gender),
                       buildDivider(280),
                       const SizedBox(height: 20)
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 600,
-                )
+                SizedBox(height: 500.h),
               ],
             ),
           ),
@@ -47,7 +46,7 @@ class CharactersDetailsScreen extends StatelessWidget {
 
   Widget buildSliverAppBar() {
     return SliverAppBar(
-      expandedHeight: 600,
+      expandedHeight: 460.h,
       pinned: true,
       stretch: true,
       backgroundColor: MyColors.myGrey,
@@ -80,17 +79,17 @@ class CharactersDetailsScreen extends StatelessWidget {
         children: [
           TextSpan(
             text: title,
-            style: const TextStyle(
+            style: TextStyle(
               color: MyColors.myWhite,
               fontWeight: FontWeight.bold,
-              fontSize: 18,
+              fontSize: 17.sp,
             ),
           ),
           TextSpan(
             text: value,
-            style: const TextStyle(
+            style: TextStyle(
               color: MyColors.myWhite,
-              fontSize: 16,
+              fontSize: 15.sp,
             ),
           ),
         ],
