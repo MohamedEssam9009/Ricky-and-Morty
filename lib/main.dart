@@ -1,6 +1,7 @@
-import 'app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'app_router.dart';
 
 void main() {
   runApp(BlocExample(appRouter: AppRouter()));
@@ -18,7 +19,7 @@ class BlocExample extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) =>MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Bloc Example',
+        title: 'Ricky and Morty',
         theme: ThemeData(useMaterial3: true),
         onGenerateRoute: appRouter.onGenerateRoute,
       ),
