@@ -3,7 +3,7 @@ This is a Flutter application demonstrating the use of the BLoC (Business Logic 
 
 Description: The project showcases how to implement the BLoC pattern in a Flutter application to separate the business logic from the UI layer.
 
-Key Features:
+## Key Features:
 
 Implementation of BLoC pattern for state management.
 Separation of concerns between UI, business logic, and data layers.
@@ -25,5 +25,5 @@ They can also suggest enhancements or optimizations to make the BLoC implementat
 Overall, this project is a valuable resource for Flutter developers looking to leverage the BLoC pattern for efficient state management in their applications.
 
 
-## UI
+## Screens
 ![Apple iPhone 11 Presentation](https://github.com/MohamedEssam-900009/bloc_example/assets/77198018/a7646477-ec3e-471a-ad0a-739141ce2732)
