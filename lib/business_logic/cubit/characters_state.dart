@@ -1,5 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:bloc_example/data/models/characters.dart';
+import 'package:character_app/data/models/characters.dart';
 
 abstract class CharactersState {}
 
